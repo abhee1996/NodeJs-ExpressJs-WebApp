@@ -18,6 +18,7 @@ hbs.registerPartials(partialsPath);
 app.get("/", function callback(req, res) {
   res.render("index", {
     name: "Muhammad Abdullah",
+    city: "Lahore",
   });
 });
 app.get("/about", function callback(req, res) {

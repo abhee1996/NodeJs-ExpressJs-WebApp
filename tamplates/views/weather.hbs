@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>headMetas}}
+<body>
+    {{>headers}}
+    <div class="container">
+        <h1 class="text-align-center d-flex justify-content-center"> weather app</h1>
+    <div class="col-12 col-lg-auto my-3  mb-3 mb-lg-0 me-lg-3" >
+          <input type="search" id="search" class="form-control" placeholder="Search..." aria-label="Search"/>
+          <button id="submitbtn" class="btn btn-success my-3" type="submit">search</button>
+        </div>
+
+        <div class="card my-3 text-align-center">
+            <div class="card-head bg-warning" style="display: flex;">
+                City:<div id="city" class="d-flex">  </div>| <div class="country"></div>
+            
+            </div>
+            <div class="card-body bg-info" >
+                <div class="d-flex">temprature:<div class="temp"> </div></div>
+            </div>
+        </div>
+    </div>
+    {{realdata}}
+    {{>footer}}
+</body>
+</html>
